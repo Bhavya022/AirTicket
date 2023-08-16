@@ -12,8 +12,7 @@ const bookingRoutes = require('./routes/bookingRoutes')
 const app = express() 
 
 app.use(express.json())  
-//app.use('/',"welcome to AIrTicketApp") 
-app.use('/','welcome')
+
 app.use('/api',authRoutes) 
  app.use('/api/flights',flightRoutes) 
  app.use('/api',bookingRoutes) 
